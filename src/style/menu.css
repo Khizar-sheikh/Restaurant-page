@@ -1,0 +1,40 @@
+
+.pizza,
+.pasta {
+  background-image: url(../image/menu.jpg);
+  display: flex;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  height: 80vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 4rem;
+  margin: 0%;
+}
+
+.pizzamenu,
+.pastamenu {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(2, 12em);
+  margin: 20px 100px;
+}
+.pizzamenu > div[class^="pizza"] ,.pastamenu > div[class^="pasta"] {
+    display: flex;
+    flex-direction: column;
+    padding: 21px;
+    margin: 10px 20px;
+    cursor: pointer;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px #5c5858;
+    background-image: linear-gradient(to left bottom , rgb(181, 174, 174) , rgb(107, 107, 110)  , rgb(154, 154, 150) );
+}
+.pizzamenu > div[class^="pizza"]:hover{
+ transform: scale(1.05);
+}
+   .pastamenu > div[class^="pasta"]:hover{
+    transform: scale(1.05);
+   }
