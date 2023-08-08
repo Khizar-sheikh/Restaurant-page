@@ -15,5 +15,5 @@ export default function createHome() {
     identity.appendChild(h2);
     Home.appendChild(identity);
     
-    return createHome; // Corrected the return statement
+    return Home; // Corrected the return statement
 }
