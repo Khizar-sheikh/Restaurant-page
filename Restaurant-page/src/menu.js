@@ -63,5 +63,5 @@ export default function createElementWithAttributes(tag, attributes) {
     menu.appendChild(pizza);
     menu.appendChild(pastaContainer);
   
-    
+    return menu;
   }

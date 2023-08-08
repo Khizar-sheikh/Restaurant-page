@@ -5,5 +5,5 @@ export default function createFooter() {
     let p = document.createElement('p');
     p.textContent = "© Restaurant 2023. All rights reserved";
     footer.appendChild(p);
-    return createFooter;
+    return footer;
   }

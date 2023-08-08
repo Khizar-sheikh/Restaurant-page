@@ -9,10 +9,12 @@ module.exports = {
     menu: './src/menu.js'
   },
   devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Restaurant Ala Carte ',
-      template: './dist/index.html', // Update the template path here
     }),
   ],
   module: {
@@ -26,6 +28,9 @@ module.exports = {
         type: 'asset/resource',
       },
     ],
+  },
+  optimization: {
+    runtimeChunk: 'single',
   },
   output: {
     filename: '[name].main.js',

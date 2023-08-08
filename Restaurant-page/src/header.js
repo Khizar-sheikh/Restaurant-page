@@ -46,6 +46,6 @@ export default function createHeader() {
   header.appendChild(navDiv);
   header.appendChild(callDiv);
 
-  return createHeader;
+  return header;
 }
 
