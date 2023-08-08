@@ -1,0 +1,30 @@
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    margin: 40px;
+    justify-items: center;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.info p{
+    text-align: center;
+ padding: 12px;
+}
+.info h1{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.contactUs{
+    background-image: url('../image/contact.jpg');
+    /* background-image: url(./Menu.jpg); */
+    display: flex;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    height: 70vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 4rem;
+    margin: 0%;
+}
