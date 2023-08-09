@@ -1,7 +1,7 @@
 import footer from "./footer";
 import contact from "./contact";
 import home from "./home";
-import menu from "./menu";
+import openMenu from "./menu";
 import header from "./header";
 
 import "./style/contact.css";
@@ -39,7 +39,8 @@ function toggelHome() {
 function toggelMenu() {
   app.innerHTML = "";
   app.appendChild(header());
-  app.appendChild(menu());
+  const menuContent = openMenu();
+  app.appendChild(menuContent);
   app.appendChild(footer());
 
   addListenersToNavLink();
