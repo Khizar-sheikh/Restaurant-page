@@ -1,6 +1,9 @@
 *{
     margin: 0;
 }
+.navlink.active::before {
+  width: 100%;
+}
 header { 
  position: fixed;
   display: flex;

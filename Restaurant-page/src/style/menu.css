@@ -21,6 +21,16 @@
   grid-template-rows: repeat(2, 12em);
   margin: 20px 100px;
 }
+
+.pizzamenu > div[class^="pizza"] h1 ,.pastamenu > div[class^="pasta"] h1{
+ font-size: 1.5rem;
+ margin: 5px ;
+}
+.pizzamenu > div[class^="pizza"]  ,.pastamenu > div[class^="pasta"] {
+ font-size: 1rem;
+ margin: 0;
+}
+
 .pizzamenu > div[class^="pizza"] ,.pastamenu > div[class^="pasta"] {
     display: flex;
     flex-direction: column;
@@ -38,3 +48,4 @@
    .pastamenu > div[class^="pasta"]:hover{
     transform: scale(1.05);
    }
+  
